@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+</head>
+<body>
+    <div class="app__videos">
+        <!-- video-container -->
+        <div class="video">
+            <video src="media/video4.mp4" class="video__player"></video>
+            <!-- play button -->
+            <!-- <div class="play-button">
+                <span class="material-icons">
+                    play_circle_outline
+                </span>
+            </div> -->
+            <!-- sidebar -->
+            <div class="videoSidebar">
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        favorite_border
+                    </span>
+                    <p>12</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        chat
+                    </span>
+                    <p>15</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <p>12</p>
+                </div>
+            </div>
+            <!-- videoFooter -->
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>@Jhon Smith</h3>
+                    <p class="videoFooter__description">Best video Song</p>
+                    <div class="videoFooter__ticker">
+                        <span class="material-icons videoFooter__icon">music_note</span>
+                        <marquee>Song Name</marquee>
+                    </div>
+                </div>
+
+                <img class="videoFooter__record" src="https://static.thenounproject.com/png/934821-200.png" alt="" />
+            </div>
+        </div>
+        <!-- video end -->
+        <!-- video-container -->
+        <div class="video">
+            <video src="media/video5.mp4" class="video__player"></video>
+            <!-- sidebar -->
+            <div class="videoSidebar">
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        favorite_border
+                    </span>
+                    <p>12</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        chat
+                    </span>
+                    <p>15</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <p>12</p>
+                </div>
+            </div>
+            <!-- videoFooter -->
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>@Jhon Smith</h3>
+                    <p class="videoFooter__description">Best video Song</p>
+                    <div class="videoFooter__ticker">
+                        <span class="material-icons videoFooter__icon">music_note</span>
+                        <marquee>Song Name</marquee>
+                    </div>
+                </div>
+                <img class="videoFooter__record" src="https://static.thenounproject.com/png/934821-200.png" alt="" />
+            </div>
+        </div>
+        <!-- video end -->
+        <!-- video-container -->
+        <div class="video">
+            <video src="media/video7.mp4" class="video__player"></video>
+            <!-- sidebar -->
+            <div class="videoSidebar">
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        favorite_border
+                    </span>
+                    <p>12</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        chat
+                    </span>
+                    <p>15</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <p>12</p>
+                </div>
+            </div>
+            <!-- videoFooter -->
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>@Jhon Smith</h3>
+                    <p class="videoFooter__description">Best video Song</p>
+                    <div class="videoFooter__ticker">
+                        <span class="material-icons videoFooter__icon">music_note</span>
+                        <marquee>Song Name</marquee>
+                    </div>
+                </div>
+                <img class="videoFooter__record" src="https://static.thenounproject.com/png/934821-200.png" alt="" />
+            </div>
+        </div>
+        <!-- video end -->
+        <!-- video-container -->
+        <div class="video">
+            <video src="media/video6.mp4" class="video__player"></video>
+            <!-- sidebar -->
+            <div class="videoSidebar">
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        favorite_border
+                    </span>
+                    <p>12</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        chat
+                    </span>
+                    <p>15</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <p>12</p>
+                </div>
+            </div>
+            <!-- videoFooter -->
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>@Jhon Smith</h3>
+                    <p class="videoFooter__description">Best video Song</p>
+                    <div class="videoFooter__ticker">
+                        <span class="material-icons videoFooter__icon">music_note</span>
+                        <marquee>Song Name</marquee>
+                    </div>
+                </div>
+                <img class="videoFooter__record" src="https://static.thenounproject.com/png/934821-200.png" alt="" />
+            </div>
+        </div>
+        <!-- video end -->
+    </div>
+    <!-- script here -->
+    <script>
+        const videos = document.querySelectorAll('video');
+        // videos.pause();
+        for(const video of videos){
+            video.addEventListener('click',()=>{
+                let options = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 1.0
+                }
+                let callback = (entries, observer)=>{
+                    entries.forEach(entry => {
+                        if(entry.isIntersecting){
+                            if(video.paused){
+                                video.play();
+                                video.loop = true;
+                            }else{
+                                video.pause();
+                            }
+                        }else{
+                            video.pause();
+                        }      
+                    });
+                }
+                let observer = new IntersectionObserver(callback, options);
+                observer.observe(video);
+            });
+        }
+    </script>
+</body>
+</html>

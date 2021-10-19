@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.app__videos{
+    scroll-snap-type: y mandatory;
+    position: relative;
+    height: 600px;
+    background-color: #fff;
+    overflow: scroll;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+
+}
+
+.app__videos::-webkit-scrollbar{
+    display: none;
+}
+.app__videos{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+.video{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    scroll-snap-align: start;
+}
+.video__player{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.play-button {
+    position: absolute;
+    top: 45%;
+    right: 39%;
+}
+.play-button .material-icons{
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.videoSidebar{
+    position: absolute;
+    top: 35%;
+    right: 10px;
+}
+.videoSidebar .material-icons{
+    font-size: 28px;
+    cursor: pointer;
+}
+.videoSidebar__button{
+    padding: 18px;
+    text-align: center;
+}
+.videoFooter{
+    position: relative;
+    bottom: 140px;
+    margin-left: 20px;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+@keyframes spinTheRecord {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.videoFooter__record{
+    animation: spinTheRecord infinite 5s linear;
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    right: 20px;
+    filter: invert(1);
+}
+.videoFooter__text{
+    flex: 1;
+}
+.videoFooter__text h3{
+    padding-bottom: 17px;
+    font-size: 15px;
+}
+.videoFooter__icon{
+    position: absolute;
+}
+.videoFooter__description{
+    padding-bottom: 20px;
+}
+.videoFooter__ticker{
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+.videoFooter__ticker marquee{
+    height: fit-content;
+    margin-left: 30px;
+    width: 60%;
+}
+
+@media (max-width: 425px) {
+    .app__videos{
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
